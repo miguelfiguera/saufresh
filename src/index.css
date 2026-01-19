@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Saufresh Brand Colors */
+  --color-primary: #D9480F;
+  --color-primary-dark: #A01F1F;
+  --color-secondary: #dcab18;
+  --color-accent: #D9480F;
+
+  /* Background & Surface */
+  --color-background: #FDFCF0;
+  --color-surface: #FFFFFF;
+  --color-card: #FFFFFF;
+
+  /* Text Colors */
+  --color-foreground: #1A1A1A;
+  --color-text: #1A1A1A;
+  --color-text-muted: #6B7280;
+  --color-muted: #F3F4F1;
+
+  /* Border & Input */
+  --color-border: #E5E7EB;
+  --color-input: #E5E7EB;
+  --color-ring: #D9480F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
