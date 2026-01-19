@@ -54,7 +54,14 @@ const tabs = [
   { id: 'sauces', label: 'Handmade Sauces', icon: Droplets },
 ]
 
-function MenuItem({ name, description, price, tag }) {
+interface MenuItemProps {
+  name: string
+  description: string
+  price?: string
+  tag?: string
+}
+
+function MenuItem({ name, description, price, tag }: MenuItemProps) {
   return (
     <div className="bg-white border-none shadow-md hover:shadow-xl transition-all hover:-translate-y-1 rounded-2xl p-6">
       <div className="flex justify-between items-start mb-4">
