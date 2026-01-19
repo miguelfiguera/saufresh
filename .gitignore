@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# Claude & Playwright
-.claude
+# Playwright
 .playwright-mcp
-.docs
+.docs/
